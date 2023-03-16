@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+      rel="stylesheet" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="stylesheet" href="main.css" />
+
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+  </head>
+  <body>
+    <main class="pt-16 px-6 xl:px-0 lg:pt-[70px]">
+      <header class="flex flex-col items-center justify-center gap-10 mb-20 lg:mb-16">
+        <h2 class="text-[2rem]">Our Pricing</h2>
+        <div class="flex gap-6 items-center">
+          <span class="opacity-50 mix-blend-normal">Annually</span>
+          <div class="relative w-14 select-none transition duration-200 ease-in">
+            <input
+              type="checkbox"
+              name="pricing-toggle"
+              id="pricing-toggle"
+              aria-label="Choose if you want montlhy subscription"
+              class="absolute block right-0 rounded-full cursor-pointer h-6 w-6 appearance-none bg-white m-[4px] checked:left-0" />
+            <label
+              for="pricing-toggle"
+              class="label block overflow-hidden h-8 bg-gradient-to-r from-gradientStart to-gradientEnd rounded-full cursor-pointer duration-300">
+            </label>
+          </div>
+          <span class="opacity-50 mix-blend-normal">Monthly</span>
+        </div>
+      </header>
+      <section class="flex flex-col gap-8 items-center lg:flex-row lg:justify-center lg:gap-0">
+        <!-- BASIC -->
+        <div
+          class="bg-white flex flex-col items-center justify-center gap-6 p-[1.875rem] rounded-xl shadow-cardShadow min-w-[20rem] md:w-[350px] lg:rounded-r-none">
+          <h3 class="text-base plan-type">Basic</h3>
+          <div class="text-[4.5rem] text-primary400 leading-none tracking-tight flex">
+            <span class="text-[40px] leading-[4.5rem]">&dollar;</span>
+            <span class="price">19.99</span>
+          </div>
+          <ul
+            class="flex flex-col my-2 border-t border-b border-opacity-25 border-primary100 text-sm leading-7 w-full text-center">
+            <li class="py-3 border-b border-opacity-25 border-primary100">500GB Storage</li>
+            <li class="py-3 border-b border-opacity-25 border-primary100">2 Users Allowed</li>
+            <li class="py-3">Send up to 3 GB</li>
+          </ul>
+          <a
+            href="#"
+            class="uppercase text-white bg-gradient-to-r from-gradientStart to-gradientEnd block w-full text-center h-11 leading-[2.75rem] rounded-md btn border"
+            >Learn More
+          </a>
+        </div>
+
+        <!-- PROFESSIONAL -->
+        <div
+          class="text-white bg-gradient-to-r from-gradientStart to-gradientEnd flex flex-col items-center justify-center gap-6 p-[1.875rem] rounded-xl shadow-cardShadow min-w-[20rem] md:w-[350px] lg:py-[55px]">
+          <h3 class="text-base plan-type">Professional</h3>
+          <p class="text-[4.5rem] leading-none tracking-tight flex">
+            <span class="text-[40px] leading-[4.5rem]">&dollar;</span>
+            <span class="price">24.99</span>
+          </p>
+          <ul
+            class="flex flex-col my-2 border-t border-b border-opacity-25 border-white text-sm leading-7 w-full text-center">
+            <li class="py-3 border-b border-opacity-25 border-white">1TB Storage</li>
+            <li class="py-3 border-b border-opacity-25 border-white">5 Users Allowed</li>
+            <li class="py-3">Send up to 10 GB</li>
+          </ul>
+          <a
+            href="#"
+            class="uppercase bg-white text-primary w-full text-center h-11 leading-[2.75rem] rounded-md border btn-secondary"
+            >Learn More
+          </a>
+        </div>
+
+        <!-- MASTER -->
+        <div
+          class="bg-white flex flex-col items-center justify-center gap-6 p-[1.875rem] rounded-xl shadow-cardShadow min-w-[20rem] md:w-[350px] lg:rounded-l-none">
+          <h3 class="text-base plan-type">Master</h3>
+          <p class="text-[4.5rem] text-primary400 leading-none tracking-tight flex">
+            <span class="text-[40px] leading-[4.5rem]">&dollar;</span>
+            <span class="price">39.99</span>
+          </p>
+          <ul
+            class="flex flex-col my-2 border-t border-b border-opacity-25 border-primary100 text-sm leading-7 w-full text-center">
+            <li class="py-3 border-b border-opacity-25 border-primary100">2 TB Storage</li>
+            <li class="py-3 border-b border-opacity-25 border-primary100">10 Users Allowed</li>
+            <li class="py-3">Send up to 20 GB</li>
+          </ul>
+          <a
+            href="#"
+            class="uppercase text-white bg-gradient-to-r from-gradientStart to-gradientEnd block w-full text-center h-11 leading-[2.75rem] rounded-md btn border"
+            >Learn More
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="text-xs text-center my-3 flex flex-col gap-2 justify-center">
+      <p>
+        Challenge by
+        <a
+          href="https://www.frontendmentor.io/challenges/notifications-page-DqK5QAmKbC"
+          target="_blank"
+          class="text-gradientStart font-bold">
+          Frontend Mentor.
+        </a>
+      </p>
+      <p>
+        Coded by
+        <a
+          href="https://www.frontendmentor.io/profile/jwalczak94"
+          target="_blank"
+          class="text-gradientEnd font-bold">
+          Joanna.
+        </a>
+      </p>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
